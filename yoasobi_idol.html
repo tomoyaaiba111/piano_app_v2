@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>YOASOBI「アイドル」自動演奏</title>
+<meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+<link rel = "stylesheet" href = "./css/style_yoasobi_idol.css" type = "text/css" media = "all">
+</head>
+
+<body>
+
+    <header>
+        <h1>YOASOBI「アイドル」の演奏を聴く</h1>
+
+        <nav>
+            <h1>作曲者 : Ayase  /  作詞者 : Ayase  </h1>
+            <ul>
+                <li><a href="index.html">ホーム画面に戻る</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+<div id = "container">
+    <div class = "float-left">
+        <div>Volume : <span id="vol-label">5</span></div>
+        <input type = "range" value = "5" max = "100" min = "1" step = "1" id = "vol">
+    </div>
+    <div class = "float-left">
+        <button class="button" id = "start-playing"> Start Auto Play</button>
+        <button class="button" id = "stop-playing">Stop Auto Play</button>
+  
+    </div>
+    <div class = "both"></div>
+    <div id = "field"></div>
+</div>
+
+<script src = "./js/script_yoasobi_idol.js"></script>
+
+</body>
+</html>
