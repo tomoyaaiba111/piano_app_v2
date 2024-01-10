@@ -1,0 +1,132 @@
+#container {
+    margin-top: 10px;
+    width: 360px;
+}
+
+.float-left {
+    float: left;
+}
+
+.both {
+    clear: both;
+    height: 10px;
+}
+
+#start-playing {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+}
+
+#stop-playing {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    display: none;
+}
+
+#field {
+    position: relative;
+    height: 700px;
+}
+
+.white {
+    width: 320px;
+    height: 35px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 5px 5px 0 #bbb;
+    transition: box-shadow .25s;
+}
+
+.black {
+    width: 200px;
+    height: 35px;
+    position: absolute;
+    background-color: #000;
+    box-shadow: 5px 5px 0 #bbb;
+    transition: box-shadow .25s;
+}
+
+.floor-name {
+    margin-left: 200px;
+}
+.button {
+    background: #f43f36;
+    color: white; 
+    font-weight: bold;
+    padding: 10px 30px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 10px; 
+    margin: 5px 15px; 
+    margin-right: 80px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 #bbb;
+    transition: box-shadow .25s;
+    border: 2px solid #f43f36;
+}
+.button:hover {
+    box-shadow: 0 0 0 #bbb;
+}
+
+header{
+    border-bottom:3px double #3c3c3c;
+    padding:10px 10px 2px 15px;
+    margin:15px auto 0 auto;
+    line-height:150%;
+}
+
+ol li {
+	margin:  0 0;         /* デフォルト指定上書き */
+    padding: 0 0;         /* デフォルト指定上書き */
+}
+
+ol {
+  list-style: none;
+  counter-reset: ol_li; /* ol_li カウンタをセットする(値もリセット) */
+}
+
+ol li:before {
+  margin-right: .25em;
+  counter-increment: ol_li; /* ol_li カウンタの値に1加える */
+  content: counter(ol_li); /* before擬似要素のcontentで出力 */
+  color: #F44336; /* 色を変更 */
+}
+
+ul li {
+    list-style:  none;  /* デフォルトのアイコンを消す */
+    margin:  0 0;         /* デフォルト指定上書き */
+    padding: 0 0;         /* デフォルト指定上書き */
+}
+
+ul li:before {
+    content:  "";     /* 空の要素作成 */
+    width:  10px;               /* 幅指定 */
+    height:  10px;              /* 高さ指定 */
+    display:  inline-block;     /* インラインブロックにする */
+    background-color: #F44336;  /* 背景色指定 */
+    border-radius:  50%;        /* 要素を丸くする */
+    position:  relative;        /* 位置調整 */
+    top: -1px;                  /* 位置調整 */
+    margin-right: 5px;          /* 余白指定 */
+}
+
+li {
+    margin-right: 10px; /* 各リストアイテムの間隔を設定 */
+}
+
+body {
+    /* background-color: rgb(185, 230, 224); */
+    background: linear-gradient(
+      to left top,
+      rgb(151, 150, 159),
+      rgb(255, 255, 255)
+    );
+    font-family: "Poppins", sans-serif;
+}
